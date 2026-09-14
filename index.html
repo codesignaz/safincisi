@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Saf İncisi — Bir İnci Su | Təbii və Təmiz İçməli Su Sifarişi</title>
+  
+  <!-- SEO & Brand Metadata -->
+  <meta name="description" content="Saf İncisi - Bir inci su. Təbii minerallarla zəngin, sağlamlığınız üçün ən saf 19L içməli su. İlk sifarişdə manual və ya elektronik pompa hədiyyə! WhatsApp ilə dərhal sifariş edin.">
+  <meta name="keywords" content="saf incisi, bir inci su, su sifarişi, 19l su, təmiz su, baki su catdirilmasi, pompa hediyye, su sirketi">
+  <meta name="theme-color" content="#0077b6">
+
+  <!-- Open Graph / WhatsApp / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saf İncisi — Bir İnci Su">
+  <meta property="og:description" content="İlk sifarişdə manual və ya elektronik pompa hədiyyə! Bir inci kimi saf və təbii içməli su.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://safincisi.az">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       TOP HEADER & NAVIGATION
+       ============================================================ -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Saf İncisi Ana Səhifə">
+        <img src="images/logo.png" alt="Saf İncisi Logo" class="logo-img">
+        <div class="brand-text-block">
+          <span class="brand-text-name">SAF İNCİSİ</span>
+          <span class="brand-text-motto">BİR İNCİ SU</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Əsas Menyu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Ana Səhifə</a></li>
+          <li><a href="#haqqimizda" class="nav-link">Haqqımızda</a></li>
+          <li><a href="#sifaris" class="nav-link">Sifariş Et</a></li>
+          <li><a href="#qalareya" class="nav-link">Sosial Şəbəkələr</a></li>
+          <li><a href="#elaqe" class="nav-link">Əlaqə</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <!-- Quick Call to Primary Line -->
+        <a href="tel:+994773421414" class="btn-phone-quick" title="Zəng et: +994 77 342 14 14" aria-label="Zəng et">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
+          </svg>
+        </a>
+
+        <!-- Fast Order Button -->
+        <a href="#sifaris" class="btn-header-order">
+          <span>💧 Sifariş Et</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyunu aç/bağla">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Backdrop & Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+        <img src="images/logo.png" alt="Saf İncisi" style="height: 44px; width: auto; object-fit: contain;">
+        <div class="brand-text-block">
+          <span class="brand-text-name">SAF İNCİSİ</span>
+          <span class="brand-text-motto">BİR İNCİ SU</span>
+        </div>
+      </div>
+      <ul class="drawer-nav">
+        <li>
+          <a href="#hero">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            Ana Səhifə
+          </a>
+        </li>
+        <li>
+          <a href="#haqqimizda">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            Brend Məqsədi & Haqqımızda
+          </a>
+        </li>
+        <li>
+          <a href="#sifaris">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            WhatsApp ilə Sifariş
+          </a>
+        </li>
+        <li>
+          <a href="#qalareya">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M21 3H3C2 3 1 4 1 5v14c0 1 1 2 2 2h18c1 0 2-1 2-2V5c0-1-1-2-2-2zm0 16H3V5h18v14zm-10-7l-3 4-2-2.5-4 5h16l-7-6.5z"/></svg>
+            TikTok & Instagram
+          </a>
+        </li>
+        <li>
+          <a href="#elaqe">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Əlaqə Məlumatları
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-contact-badge">
+        <h4>Sifariş Xətti (WhatsApp)</h4>
+        <a href="https://wa.me/994773421414" style="font-weight: 800; color: var(--primary-dark); font-size: 1.05rem;">
+          +994 77 342 14 14
+        </a>
+      </div>
+      <div class="drawer-socials">
+        <a href="https://www.tiktok.com/@saf.incisi" target="_blank" rel="noopener" class="social-chip-btn chip-tiktok" style="flex:1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.28 6.34 6.34 0 0 0 9.34 21.6c3.5 0 6.34-2.84 6.34-6.33V8.86a8.28 8.28 0 0 0 4.81 1.54V6.95a4.85 4.85 0 0 1-.9-.26z"/></svg>
+          <span>TikTok</span>
+        </a>
+        <a href="https://www.instagram.com/saf.incisi" target="_blank" rel="noopener" class="social-chip-btn chip-instagram" style="flex:1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape-water-drop"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-text-col">
+          <div class="hero-badge-pill">
+            <span class="pulse-dot"></span>
+            <span>Premium Keyfiyyət • 100% Təbii Saflıq</span>
+          </div>
+
+          <h1 class="hero-title">
+            Saf İncisi — <br>
+            <span class="highlight-pearl">Bir İnci Su</span>
+          </h1>
+
+          <div class="hero-motto-badge">
+            "Saf İncisi — Bir İnci Su"
+          </div>
+
+          <p class="hero-description">
+            Təbiətin bəxş etdiyi ən saf mineral balansı ailənizin və ofisinizin xidmətinə gətiririk. Hər damlasında təravət, sağlamlıq və canlılıq bəxş edən zərif inci ləzzəti.
+          </p>
+
+          <!-- First Order Gift Callout -->
+          <div class="hero-gift-box">
+            <div class="gift-icon-bubble">🎁</div>
+            <div>
+              <div class="gift-text-title">İlk Sifarişdə Pompa Hədiyyə!</div>
+              <div class="gift-text-desc">İlk dəfə sifariş edən hər bir müştəriyə istəyə uyğun <strong>Manual</strong> və ya <strong>Elektronik USB Pompa</strong> tam ödənişsiz təqdim olunur.</div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#sifaris" class="btn-primary-hero">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+              </svg>
+              <span>İndi Sifariş Et</span>
+            </a>
+
+            <!-- Direct WhatsApp with 1st Number -->
+            <a href="https://wa.me/994773421414?text=Salam%2C%20Saf%20%C4%B0ncisi%20suyu%20haqq%C4%B1nda%20m%C9%99lumat%20v%C9%99%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m." 
+               target="_blank" 
+               rel="noopener" 
+               class="btn-whatsapp-hero">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z"/>
+              </svg>
+              <span>WhatsApp ilə Yaz</span>
+            </a>
+          </div>
+
+          <!-- Feature Tags -->
+          <div class="hero-feature-tags">
+            <span class="hero-tag">💧 19 Litrlik Standart</span>
+            <span class="hero-tag">🚀 Qapıya Pulsuz Çatdırılma</span>
+            <span class="hero-tag">⚡ Yüksək Standartlı Filtrasiya</span>
+            <span class="hero-tag">🛡️ Gigiyenik Qablaşdırma</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual Stage -->
+        <div class="hero-visual-col">
+          <div class="hero-bottle-stage">
+            <!-- Background Water Splash Graphic -->
+            <img src="images/water-splash.png" onerror="this.onerror=null;this.src='images/water-splash.svg';" alt="Təmiz Su Dalğası" class="hero-splash-bg" width="440" height="360" loading="eager">
+            
+            <!-- Central 19L Water Bottle -->
+            <img src="images/water-bottle.png" alt="Saf İncisi 19L Su Qabı" class="hero-bottle-img" width="220" height="340" loading="eager">
+
+            <!-- Floating Badges -->
+            <div class="floating-pill-badge top-left">
+              <span class="pill-icon">🎁</span>
+              <div>
+                <div class="pill-text-sub">Özəl Kampaniya</div>
+                <div class="pill-text-main">Hədiyyə Pompa</div>
+              </div>
+            </div>
+
+            <div class="floating-pill-badge bottom-right">
+              <span class="pill-icon">💎</span>
+              <div>
+                <div class="pill-text-sub">100% Zəmanət</div>
+                <div class="pill-text-main">Bir İnci Saflığı</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BRAND PURPOSE & PHILOSOPHY (BRENDİN ƏSAS MƏQSƏDİ)
+         ============================================================ -->
+    <section class="section-wrapper" id="haqqimizda">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Brend Haqqında</span>
+          <h2 class="section-title">Saf İncisi Su — Sağlam Həyatın Əsası</h2>
+          <p class="section-desc">
+            Biz sadəcə su çatdırmırıq; hər bir ailəyə və iş kollektivinə sağlam, gümrah və təmiz həyat tərzi bəxş edirik.
+          </p>
+        </div>
+
+        <!-- Highlight Purpose Card -->
+        <div class="brand-purpose-card">
+          <div class="purpose-content">
+            <div class="purpose-motto">
+              <span>💎</span>
+              <span>ŞÜARIMIZ: "SAF İNCİSİ — BİR İNCİ SU"</span>
+            </div>
+            <h3 class="purpose-title">Ən Əsas Məqsədimiz: Təbiətin İnci Saflığını Süfrənizə Daşımaq</h3>
+            <p class="purpose-text">
+              İnsan bədəninin 70%-i sudan ibarətdir və qəbul etdiyimiz suyun keyfiyyəti birbaşa sağlamlığımıza, enerjimizə və rifahımıza təsir edir. "Saf İncisi" olaraq başlıca məqsədimiz təbii qaynaqların minerallarla zəngin balansını qorumaq, insan orqanizminə həqiqi gümrahlıq verən ən saf içməli suyu hər bir ev və müəssisə üçün əlçatan etməkdir.
+            </p>
+
+            <div class="purpose-stats-grid">
+              <div class="stat-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Təbii Təmizlik</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">7.5+</div>
+                <div class="stat-label">İdeal pH Balansı</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">0%</div>
+                <div class="stat-label">Kimyəvi Qatqı</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Müştəri Qayğısı</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Pillars of Excellence -->
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">💎</div>
+            <h3>İnci Kimi Saflıq</h3>
+            <p>Hər damlası xüsusi təmizlik və zəngin mineral tərkibinə malikdir. Yumşaq dadı ilə içdikcə susuzluğunuzu yatırır və orqanizmi canlandırır.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">🛡️</div>
+            <h3>Maksimal Gigiyena</h3>
+            <p>19 litrlik qablarımız qabaqcıl avtomatlaşdırılmış xətlərdə çoxpilləli sterilizasiyadan keçirilir və təhlükəsiz qapaqla möhürlənir.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">🎁</div>
+            <h3>Pompa Hədiyyəsi</h3>
+            <p>İlk dəfə "Saf İncisi" seçən müştərilərimizə xüsusi diqqət: ehtiyacınıza uyğun olaraq istər <strong>elektronik</strong>, istərsə də <strong>manual pompa</strong> hədiyyə verilir.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">🚀</div>
+            <h3>Sürətli Çatdırılma</h3>
+            <p>Sifarişiniz WhatsApp üzərindən dərhal qəbul edilir və kuryerlərimiz tərəfindən ünvanınıza operativ şəkildə çatdırılır.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ORDER SECTION (SİFARİŞ HİSSƏSİ)
+         ============================================================ -->
+    <section class="section-wrapper order-section" id="sifaris">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Asan və Sürətli</span>
+          <h2 class="section-title">WhatsApp ilə Tək Toxunuşla Sifariş Et</h2>
+          <p class="section-desc">
+            Sayı və hədiyyə pompa seçiminizi qeyd edin, bir toxunuşla birbaşa WhatsApp xəttimizə hazır mesaj göndərin!
+          </p>
+        </div>
+
+        <div class="order-wrapper-card">
+          <div class="order-grid-layout">
+            <!-- Left Column: Form Controls -->
+            <div class="order-controls-col">
+              <!-- Step 1: Bottle Quantity -->
+              <div class="order-step-title">
+                <span class="step-number">1</span>
+                <span>Su Qablarının Sayını Seçin (19 Litr)</span>
+              </div>
+
+              <div class="quantity-control-container">
+                <div class="qty-flex">
+                  <div class="qty-info-col">
+                    <div class="qty-bottle-mini">
+                      <img src="images/water-bottle.png" alt="19L Su" width="44" height="44" loading="lazy">
+                    </div>
+                    <div>
+                      <div class="qty-label-bold">19L "Saf İncisi" Su Qabı</div>
+                      <div class="qty-label-sub">Təbii bulaq saflığında içməli su</div>
+                    </div>
+                  </div>
+
+                  <!-- Counter Buttons -->
+                  <div class="counter-interactive-group">
+                    <button type="button" class="counter-btn" id="btnQtyMinus" aria-label="Sayı azalt">−</button>
+                    <input type="number" id="waterQty" class="counter-input" value="2" min="1" max="999" aria-label="Su qablarının sayı">
+                    <button type="button" class="counter-btn" id="btnQtyPlus" aria-label="Sayı artır">+</button>
+                  </div>
+                </div>
+
+                <!-- Quick Presets -->
+                <div class="qty-preset-pills">
+                  <button type="button" class="preset-pill" data-qty="1">1 ədəd</button>
+                  <button type="button" class="preset-pill active" data-qty="2">2 ədəd</button>
+                  <button type="button" class="preset-pill" data-qty="3">3 ədəd</button>
+                  <button type="button" class="preset-pill" data-qty="5">5 ədəd</button>
+                  <button type="button" class="preset-pill" data-qty="10">10 ədəd</button>
+                </div>
+              </div>
+
+              <!-- Step 2: Pump Gift Selection -->
+              <div class="order-step-title">
+                <span class="step-number">2</span>
+                <span>İlk Sifariş Hədiyyənizi Seçin</span>
+              </div>
+
+              <div class="pump-selection-group">
+                <div class="gift-banner-callout">
+                  <span class="callout-icon">🎉</span>
+                  <div class="callout-text">
+                    <h4>İlk Sifarişinizdə Pompa Hədiyyə!</h4>
+                    <p>Pompa manual (mexaniki) və ya elektronik (USB ilə şarj olan) olaraq təqdim edilir. Zövqünüzə uyğun seçin:</p>
+                  </div>
+                </div>
+
+                <div class="pump-options-grid">
+                  <!-- Option A: Electronic Pump -->
+                  <div class="pump-card selected" data-pump="elektronik">
+                    <input type="radio" name="pumpGift" value="elektronik" checked class="pump-radio-custom" id="pumpElec">
+                    <div class="pump-custom-check"></div>
+                    <div class="pump-icon-thumb">
+                      <img src="images/pump-electric.png" alt="Elektronik Pompa" width="48" height="48" loading="lazy">
+                    </div>
+                    <div class="pump-info-text">
+                      <span class="pump-badge-gift">Hədiyyə Seçimi</span>
+                      <div class="pump-name">Elektronik Pompa</div>
+                      <div class="pump-spec">USB ilə şarjlı, tək toxunuşla avtomatik su axını</div>
+                    </div>
+                  </div>
+
+                  <!-- Option B: Manual Pump -->
+                  <div class="pump-card" data-pump="manual">
+                    <input type="radio" name="pumpGift" value="manual" class="pump-radio-custom" id="pumpMan">
+                    <div class="pump-custom-check"></div>
+                    <div class="pump-icon-thumb">
+                      <img src="images/pump-manual.png" alt="Manual Pompa" width="48" height="48" loading="lazy">
+                    </div>
+                    <div class="pump-info-text">
+                      <span class="pump-badge-gift">Hədiyyə Seçimi</span>
+                      <div class="pump-name">Manual Pompa</div>
+                      <div class="pump-spec">Klassik mexaniki əl pompası, elektriksiz rahat istifadə</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Optional Contact Details -->
+              <div class="order-step-title">
+                <span class="step-number">3</span>
+                <span>Çatdırılma Detalları (Könüllü)</span>
+              </div>
+
+              <div class="customer-info-inputs">
+                <div class="input-row">
+                  <div class="form-group">
+                    <label class="form-label" for="customerName">Adınız və Soyadınız</label>
+                    <input type="text" id="customerName" class="form-input" placeholder="Məs: Rəşad Əliyev">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="customerAddress">Çatdırılma Ünvanı / Ərazi</label>
+                    <input type="text" id="customerAddress" class="form-input" placeholder="Məs: Nəsimi ray., Azadlıq pr. 102">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="customerNotes">Əlavə Qeyd və ya İstək</label>
+                  <textarea id="customerNotes" class="form-textarea" placeholder="Məs: Zəng vurmadan öncə qapını döyün və ya günorta çatdırın..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Live WhatsApp Chat Preview & Submit Button -->
+            <div class="order-summary-sidebar">
+              <div class="whatsapp-mock-window">
+                <!-- WhatsApp Bar Header -->
+                <div class="whatsapp-mock-header">
+                  <div class="wa-header-contact">
+                    <div class="wa-avatar">
+                      <img src="images/logo.png" alt="Saf İncisi WP">
+                    </div>
+                    <div>
+                      <div class="wa-name-title">Saf İncisi Sifariş Xətti</div>
+                      <div class="wa-status-text">onlayn • rəsmi xidmət</div>
+                    </div>
+                  </div>
+                  <div class="wa-number-badge">
+                    +994 77 342 14 14
+                  </div>
+                </div>
+
+                <!-- Chat bubble preview area -->
+                <div class="whatsapp-mock-body">
+                  <div class="wa-bubble-preview">
+                    <span id="waPreviewText">Salam, "Saf İncisi" suyu sifariş etmək istəyirəm...</span>
+                    <div class="wa-time-stamp">
+                      <span id="waPreviewTime">12:00</span>
+                      <svg class="wa-check-double" width="16" height="11" viewBox="0 0 16 11" fill="currentColor">
+                        <path d="M11.07.7a.75.75 0 011.06 0l3.6 3.6a.75.75 0 010 1.06l-7.7 7.7a.75.75 0 01-1.06 0l-3.6-3.6a.75.75 0 111.06-1.06L7 11.47 13.94 4.53l-2.87-2.87a.75.75 0 010-1.06z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Submit WhatsApp Action (ONLY 1st number: +994773421414) -->
+              <a href="#" id="btnSubmitOrder" target="_blank" rel="noopener" class="btn-whatsapp-order-main">
+                <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zM17.5 14.88c-.28.8-1.4 1.48-1.93 1.54-.5.06-1.15.09-3.7-0.96-3.26-1.35-5.36-4.66-5.52-4.88-.16-.22-1.33-1.77-1.33-3.38s.84-2.4 1.14-2.73c.3-.33.66-.41.88-.41s.44.01.63.02c.2.01.47-.08.73.55.28.66.94 2.3.1 2.51-.15.21-.25.35-.37.49-.12.14-.25.32-.11.56.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.39.1.53-.06.15-.17.63-.73.8-0.98.17-.25.34-.21.57-.12.24.08 1.52.72 1.78.85.26.13.43.2.49.31.06.12.06.7-.22 1.5z"/>
+                </svg>
+                <span>WhatsApp ilə Sifariş Et</span>
+              </a>
+
+              <!-- Pricing Policy Note: No exact prices shown as required -->
+              <div class="order-policy-notes">
+                <strong>💡 Xüsusi Təklif & Sərfəli Şərtlər:</strong><br>
+                Sifariş sayına, fərdi və korporativ ehtiyaclarınıza uyğun ən sərfəli şərtlər və çatdırılma vaxtı WhatsApp xəttimizdə operator tərəfindən dərhal bildirilir. İlk sifarişinizdə hədiyyə pompanız tam pulsuz verilir!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY & SOCIAL EMBED SHOWCASE (TIKTOK & INSTAGRAM)
+         ============================================================ -->
+    <section class="social-section" id="qalareya">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Bizi İzləyin</span>
+          <h2 class="section-title">Sosial Şəbəkələrdə Saf İncisi</h2>
+          <p class="section-desc">
+            TikTok və Instagram səhifələrimizdə ən son videoçarxlarımızı, suyun istehsal və çatdırılma proseslərini izləyin.
+          </p>
+        </div>
+
+        <!-- Tab Selector: TikTok vs Instagram -->
+        <div class="social-tabs-container">
+          <button type="button" class="tab-btn active tiktok-tab" data-tab="tabTikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.28 6.34 6.34 0 0 0 9.34 21.6c3.5 0 6.34-2.84 6.34-6.33V8.86a8.28 8.28 0 0 0 4.81 1.54V6.95a4.85 4.85 0 0 1-.9-.26z"/></svg>
+            <span>TikTok (@saf.incisi)</span>
+          </button>
+          
+          <button type="button" class="tab-btn instagram-tab" data-tab="tabInstagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <span>Instagram (@saf.incisi)</span>
+          </button>
+        </div>
+
+        <!-- TikTok Content Container -->
+        <div class="social-tab-content active" id="tabTikTok">
+          <!-- TikTok Profile Banner -->
+          <div class="social-account-banner">
+            <div class="social-banner-left">
+              <div class="social-badge-avatar tiktok-avatar-badge">
+                <img src="images/tiktok-logo.svg" alt="TikTok" class="social-logo-img">
+              </div>
+              <div class="social-meta">
+                <h3>Saf İncisi Su</h3>
+                <div class="social-handle">@saf.incisi</div>
+                <span class="social-followers-pill">Rəsmi TikTok Kanalı</span>
+              </div>
+            </div>
+            <a href="https://www.tiktok.com/@saf.incisi" target="_blank" rel="noopener" class="btn-open-social btn-open-tiktok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 0 0 3 15.28 6.34 6.34 0 0 0 9.34 21.6c3.5 0 6.34-2.84 6.34-6.33V8.86a8.28 8.28 0 0 0 4.81 1.54V6.95a4.85 4.85 0 0 1-.9-.26z"/></svg>
+              <span>TikTok-da İzlə</span>
+            </a>
+          </div>
+
+          <!-- Official Embed Window + Dynamic Fallback -->
+          <div class="embed-window-card">
+            <div class="embed-inner-wrapper">
+              <!-- TikTok Official Embed Element -->
+              <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@saf.incisi" data-unique-id="saf.incisi" data-embed-type="creator" style="max-width: 605px; min-width: 325px; margin: 0 auto;">
+                <section>
+                  <a target="_blank" href="https://www.tiktok.com/@saf.incisi?refer=creator_embed">@saf.incisi</a>
+                  <p>Saf İncisi - Bir İnci Su! 💧 Ən son videoçarxlarımız və təqdimatlarımız üçün rəsmi TikTok səhifəmizə daxil olun.</p>
+                </section>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Content Container -->
+        <div class="social-tab-content" id="tabInstagram">
+          <!-- Instagram Banner -->
+          <div class="social-account-banner" style="background: linear-gradient(135deg, #262626 0%, #171717 100%);">
+            <div class="social-banner-left">
+              <div class="social-badge-avatar instagram-avatar-badge">
+                <img src="images/instagram-logo.svg" alt="Instagram" class="social-logo-img">
+              </div>
+              <div class="social-meta">
+                <h3>Saf İncisi Su</h3>
+                <div class="social-handle">@saf.incisi</div>
+                <span class="social-followers-pill">Rəsmi Instagram Səhifəsi</span>
+              </div>
+            </div>
+            <a href="https://www.instagram.com/saf.incisi" target="_blank" rel="noopener" class="btn-open-social btn-open-instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram-da İzlə</span>
+            </a>
+          </div>
+
+          <!-- Instagram Embed Window -->
+          <div class="embed-window-card instagram-embed-card">
+            <div class="embed-inner-wrapper" style="text-align: center;">
+              <iframe 
+                src="https://www.instagram.com/saf.incisi/embed" 
+                class="instagram-embed-iframe" 
+                frameborder="0" 
+                scrolling="no" 
+                allowtransparency="true" 
+                allow="encrypted-media"
+                title="Saf İncisi Instagram Səhifəsi">
+              </iframe>
+              <div class="instagram-embed-footer">
+                <a href="https://www.instagram.com/saf.incisi" target="_blank" rel="noopener" class="btn-open-social btn-open-instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  <span>Instagram-da Ən Son Postları Gör</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION (ƏLAQƏ MƏLUMATLARI)
+         ============================================================ -->
+    <section class="contact-section" id="elaqe">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Bizimlə Əlaqə</span>
+          <h2 class="section-title">Saf İncisi Şirkətinin Əlaqə Məlumatları</h2>
+          <p class="section-desc">
+            Sualınız var və ya sifariş vermək istəyirsiniz? Bizimlə birbaşa telefon və ya WhatsApp vasitəsilə əlaqə saxlayın.
+          </p>
+        </div>
+
+        <!-- 3 Contact Cards -->
+        <div class="contacts-grid">
+          <!-- Contact 1: PRIMARY ORDER LINE -->
+          <div class="contact-card primary-contact-card">
+            <span class="contact-card-badge">⭐ Əsas Sifariş Xətti</span>
+            <div class="contact-icon-circle">📞</div>
+            <h3>Sifariş Xətti (WhatsApp)</h3>
+            <div class="contact-role-label">Sifarişlərin qəbulu və operativ xidmət</div>
+            <span class="contact-phone-number">+994 77 342 14 14</span>
+            <div class="contact-card-actions">
+              <a href="tel:+994773421414" class="btn-contact-action btn-contact-call">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+                <span>Zəng et</span>
+              </a>
+              <a href="https://wa.me/994773421414?text=Salam%2C%20Saf%20%C4%B0ncisi%20suyu%20haqq%C4%B1nda%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank" rel="noopener" class="btn-contact-action btn-contact-wp">
+                <span>WhatsApp</span>
+              </a>
+              <button type="button" class="copy-phone-btn" data-copy="+994773421414" title="Nömrəni kopyala" aria-label="Nömrəni kopyala">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact 2 -->
+          <div class="contact-card">
+            <div class="contact-icon-circle">📞</div>
+            <h3>Müştəri Xidmətləri</h3>
+            <div class="contact-role-label">Məlumat, təklif və korporativ əməkdaşlıq</div>
+            <span class="contact-phone-number">+994 55 869 56 55</span>
+            <div class="contact-card-actions">
+              <a href="tel:+994558695655" class="btn-contact-action btn-contact-call">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+                <span>Zəng et</span>
+              </a>
+              <a href="https://wa.me/994558695655?text=Salam%2C%20Saf%20%C4%B0ncisi%20il%C9%99%20%C9%99laq%C9%99%20saxlay%C4%B1ram." target="_blank" rel="noopener" class="btn-contact-action btn-contact-wp">
+                <span>WhatsApp</span>
+              </a>
+              <button type="button" class="copy-phone-btn" data-copy="+994558695655" title="Nömrəni kopyala" aria-label="Nömrəni kopyala">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact 3 -->
+          <div class="contact-card">
+            <div class="contact-icon-circle">📞</div>
+            <h3>Qaynar Xətt</h3>
+            <div class="contact-role-label">Çatdırılma statusu və dəstək</div>
+            <span class="contact-phone-number">+994 50 470 18 66</span>
+            <div class="contact-card-actions">
+              <a href="tel:+994504701866" class="btn-contact-action btn-contact-call">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+                <span>Zəng et</span>
+              </a>
+              <a href="https://wa.me/994504701866?text=Salam%2C%20Saf%20%C4%B0ncisi%20d%C9%99st%C9%99k%20x%C9%99ttin%C9%99%20yaz%C4%B1ram." target="_blank" rel="noopener" class="btn-contact-action btn-contact-wp">
+                <span>WhatsApp</span>
+              </a>
+              <button type="button" class="copy-phone-btn" data-copy="+994504701866" title="Nömrəni kopyala" aria-label="Nömrəni kopyala">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media Bar Direct Access -->
+        <div class="social-channels-bar">
+          <div class="social-bar-text">
+            <h4>Rəsmi Sosial Şəbəkə Səhifələrimiz</h4>
+            <p>Yenilikləri və kampaniyaları birinci izləmək üçün səhifələrimizə abunə olun.</p>
+          </div>
+          <div class="social-buttons-flex">
+            <a href="https://www.tiktok.com/@saf.incisi" target="_blank" rel="noopener" class="social-chip-btn chip-tiktok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.28 6.34 6.34 0 0 0 9.34 21.6c3.5 0 6.34-2.84 6.34-6.33V8.86a8.28 8.28 0 0 0 4.81 1.54V6.95a4.85 4.85 0 0 1-.9-.26z"/></svg>
+              <span>TikTok (@saf.incisi)</span>
+            </a>
+            <a href="https://www.instagram.com/saf.incisi" target="_blank" rel="noopener" class="social-chip-btn chip-instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram (@saf.incisi)</span>
+            </a>
+            <a href="https://wa.me/994773421414" target="_blank" rel="noopener" class="social-chip-btn chip-whatsapp">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z"/></svg>
+              <span>WhatsApp Xətti</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       SITE FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h2>SAF İNCİSİ</h2>
+          <div class="footer-motto">Saf İncisi — Bir İnci Su</div>
+          <p class="footer-desc">
+            Təbii minerallarla zənginləşdirilmiş, yüksək gigiyenik standartlara uyğun qablaşdırılan premium içməli su. Ailəniz və işiniz üçün ən etibarlı seçim.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Keçidlər</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Ana Səhifə</a></li>
+            <li><a href="#haqqimizda">Brend Haqqında</a></li>
+            <li><a href="#sifaris">Sifariş Et (WhatsApp)</a></li>
+            <li><a href="#qalareya">Sosial Şəbəkələr</a></li>
+            <li><a href="#elaqe">Əlaqə Məlumatları</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Əlaqə Nömrələri</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span>⭐ Sifariş:</span>
+              <a href="tel:+994773421414">+994 77 342 14 14</a>
+            </li>
+            <li>
+              <span>📞 Dəstək 1:</span>
+              <a href="tel:+994558695655">+994 55 869 56 55</a>
+            </li>
+            <li>
+              <span>📞 Dəstək 2:</span>
+              <a href="tel:+994504701866">+994 50 470 18 66</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 "Saf İncisi" Su Şirkəti. Bütün hüquqlar qorunur.</p>
+        <p><a href="https://www.instagram.com/codesign.az">codesign.az</a>  tərəfindən yaradıldı.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       MOBILE BOTTOM STICKY NAVIGATION BAR (MOBILE FIRST)
+       ============================================================ -->
+  <nav class="mobile-bottom-bar" aria-label="Mobil alt naviqasiya">
+    <a href="#hero" class="bottom-bar-action active">
+      <svg fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      <span>Əsas</span>
+    </a>
+    <a href="#haqqimizda" class="bottom-bar-action">
+      <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      <span>Haqqımızda</span>
+    </a>
+    
+    <!-- Big Highlight Order Button -->
+    <a href="#sifaris" class="bottom-bar-action btn-order-highlight" title="Sifariş Et">
+      <svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      <span>Sifariş</span>
+    </a>
+
+    <a href="#qalareya" class="bottom-bar-action">
+      <svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 3H3C2 3 1 4 1 5v14c0 1 1 2 2 2h18c1 0 2-1 2-2V5c0-1-1-2-2-2zm0 16H3V5h18v14zm-10-7l-3 4-2-2.5-4 5h16l-7-6.5z"/></svg>
+      <span>Sosial</span>
+    </a>
+    <a href="https://wa.me/994773421414" target="_blank" rel="noopener" class="bottom-bar-action btn-wp-action">
+      <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- ============================================================
+       FLOATING WHATSAPP BUTTON (DESKTOP & TABLET)
+       ============================================================ -->
+  <div class="floating-wp-container">
+    <div class="floating-wp-tooltip">
+      <span>💬 Sualınız var? Canlı WhatsApp dəstəyi</span>
+    </div>
+    <a href="https://wa.me/994773421414?text=Salam%2C%20Saf%20%C4%B0ncisi%20suyu%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m." 
+       target="_blank" 
+       rel="noopener" 
+       class="floating-wp-btn" 
+       title="WhatsApp ilə Əlaqə" 
+       aria-label="WhatsApp ilə Əlaqə">
+      <span class="live-badge"></span>
+      <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zM17.5 14.88c-.28.8-1.4 1.48-1.93 1.54-.5.06-1.15.09-3.7-0.96-3.26-1.35-5.36-4.66-5.52-4.88-.16-.22-1.33-1.77-1.33-3.38s.84-2.4 1.14-2.73c.3-.33.66-.41.88-.41s.44.01.63.02c.2.01.47-.08.73.55.28.66.94 2.3.1 2.51-.15.21-.25.35-.37.49-.12.14-.25.32-.11.56.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.39.1.53-.06.15-.17.63-.73.8-0.98.17-.25.34-.21.57-.12.24.08 1.52.72 1.78.85.26.13.43.2.49.31.06.12.06.7-.22 1.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="toast-notice" id="toastNotice"></div>
+
+  <!-- Official TikTok Embed Script (Async) -->
+  <script async src="https://www.tiktok.com/embed.js"></script>
+
+  <!-- Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
